@@ -1,15 +1,15 @@
 let btn = document.querySelector(".falar-btn")
 let input = document.querySelector(".text-input")
 
-btn.addEventListener("click", () =>{
-  speakBrowser()
-})
+btn.addEventListener("click", speakBrowser)
 
-input.addEventListener("keypress", function(event) {
+input.addEventListener("keypress", speakBrowserOnKeyPress)
+
+function speakBrowserOnKeyPress(event) {
   if (event.key === "Enter") {
     speakBrowser()
   }
-})
+}
 
 function speakBrowser() {
   let text = document.querySelector(".text-input").value
