@@ -1,4 +1,4 @@
-let btn = document.querySelector(".falar-btn")
+let btn = document.querySelector(".speak-btn")
 let input = document.querySelector(".text-input")
 
 btn.addEventListener("click", speakBrowser)
